@@ -1,0 +1,9 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  hash_tag: one
+  song: one
+
+two:
+  hash_tag: two
+  song: two

@@ -1,0 +1,2 @@
+class SongTagsController < ApplicationController
+end

@@ -1,0 +1,2 @@
+class TimePeriodsController < ApplicationController
+end
