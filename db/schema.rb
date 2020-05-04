@@ -21,7 +21,6 @@ ActiveRecord::Schema.define(version: 2020_05_02_232328) do
   create_table "playlist_containers", force: :cascade do |t|
     t.integer "time_period_id", null: false
     t.integer "song_id", null: false
-    t.string "img_url"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["song_id"], name: "index_playlist_containers_on_song_id"
@@ -38,10 +37,10 @@ ActiveRecord::Schema.define(version: 2020_05_02_232328) do
   end
 
   create_table "songs", force: :cascade do |t|
-    t.string "title"
+    t.string "name"
     t.string "artist"
-    t.string "spotify_uri"
-    t.string "added_at"
+    t.string "uri"
+    t.datetime "favorite_date"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -49,6 +48,7 @@ ActiveRecord::Schema.define(version: 2020_05_02_232328) do
   create_table "time_periods", force: :cascade do |t|
     t.integer "year"
     t.string "month"
+    t.string "img_url"
     t.integer "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

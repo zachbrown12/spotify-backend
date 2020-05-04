@@ -1,10 +1,10 @@
 class CreateSongs < ActiveRecord::Migration[6.0]
   def change
     create_table :songs do |t|
-      t.string :title
+      t.string :name
       t.string :artist
-      t.string :spotify_uri
-      t.string :added_at
+      t.string :uri
+      t.datetime :favorite_date
 
       t.timestamps
     end

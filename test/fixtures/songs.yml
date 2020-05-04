@@ -1,6 +1,7 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
+<<<<<<< HEAD
   title: MyString
   artist: MyString
   spotify_uri: MyString
@@ -11,3 +12,15 @@ two:
   artist: MyString
   spotify_uri: MyString
   added_at: MyString
+=======
+  name: MyString
+  artist: MyString
+  uri: MyString
+  favorite_date: 2020-05-02 11:32:19
+
+two:
+  name: MyString
+  artist: MyString
+  uri: MyString
+  favorite_date: 2020-05-02 11:32:19
+>>>>>>> e3c8c4efa34cd79e50c0a44361159a5b914435a1
