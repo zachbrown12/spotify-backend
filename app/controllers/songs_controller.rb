@@ -1,6 +1,4 @@
 class SongsController < ApplicationController
-<<<<<<< HEAD
-=======
 
     def create
         song = Song.create(song_params)
@@ -25,5 +23,4 @@ class SongsController < ApplicationController
     def song_params
         params.require(:song).permit(:id, :name, :artist, :uri, :favorite_date)
     end
->>>>>>> e3c8c4efa34cd79e50c0a44361159a5b914435a1
 end
