@@ -49,10 +49,8 @@ ActiveRecord::Schema.define(version: 2020_05_02_232328) do
     t.integer "year"
     t.string "month"
     t.string "img_url"
-    t.integer "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["user_id"], name: "index_time_periods_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -67,5 +65,4 @@ ActiveRecord::Schema.define(version: 2020_05_02_232328) do
   add_foreign_key "playlist_containers", "time_periods"
   add_foreign_key "song_tags", "hash_tags"
   add_foreign_key "song_tags", "songs"
-  add_foreign_key "time_periods", "users"
 end
