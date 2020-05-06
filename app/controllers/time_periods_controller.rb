@@ -23,14 +23,14 @@ class TimePeriodsController < ApplicationController
         render({json: @time_period})    
 
     
-    end
+
 
 
 
     private
 
     def time_period_params
+
         params.require(:time_period).permit(:year, :month, :img_url)
     end
 
-end
