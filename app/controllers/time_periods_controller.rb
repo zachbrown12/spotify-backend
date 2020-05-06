@@ -21,7 +21,7 @@ class TimePeriodsController < ApplicationController
         @time_period = TimePeriod.find(params[:id])
         @time_period.destroy
         render({json: @time_period})    
-
+    end
     
 
 
@@ -34,3 +34,4 @@ class TimePeriodsController < ApplicationController
         params.require(:time_period).permit(:year, :month, :img_url)
     end
 
+end
