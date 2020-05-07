@@ -41,6 +41,7 @@ ActiveRecord::Schema.define(version: 2020_05_02_232328) do
     t.string "artist"
     t.string "uri"
     t.datetime "favorite_date"
+    t.integer "duration"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

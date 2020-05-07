@@ -5,6 +5,7 @@ class CreateSongs < ActiveRecord::Migration[6.0]
       t.string :artist
       t.string :uri
       t.datetime :favorite_date
+      t.integer :duration
 
       t.timestamps
     end
